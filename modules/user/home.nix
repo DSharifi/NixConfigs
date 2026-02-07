@@ -13,6 +13,7 @@
     ./applications/ghostty.nix
     ./applications/vscode.nix
     ./plasma/default.nix
+    ./plasma/plasma-config.nix
   ];
 
   nixpkgs = {
