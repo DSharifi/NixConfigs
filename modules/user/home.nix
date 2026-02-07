@@ -9,6 +9,7 @@
     ./fonts/fonts.nix
     ./dev-tools/rust.nix
     ./applications/discord.nix
+    ./applications/keepassxc.nix
     ./applications/ghostty.nix
     ./plasma/default.nix
   ];
