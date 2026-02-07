@@ -1,0 +1,15 @@
+{ config, pkgs, ... }:
+
+{
+    programs.git = {
+        enable = true;
+        settings = {
+            user = {
+                name = "Daniel Sharifi";
+                email = "me@dsharifi.com";
+            };
+            safe.directory = "/etc/nixos";
+            init.defaultBranch = "main";
+        };
+    };
+}
