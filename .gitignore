@@ -6,4 +6,4 @@ result-*
 .direnv
 
 # hw configurations
-hardware-configuration.nix
+# hardware-configuration.nix

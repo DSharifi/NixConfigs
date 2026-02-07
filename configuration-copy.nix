@@ -11,8 +11,14 @@
     ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "/dev/vda";
+  boot.loader.grub.useOSProber = true;
+
+  # Default shell
+  environment.shells = with pkgs; [ bash zsh fish ];
+  users.defaultUserShell = pkgs.fish;
+  programs.fish.enable = true;
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
@@ -65,7 +71,6 @@
     # no need to redefine it in your config for now)
     #media-session.enable = true;
   };
-
   services.flatpak.enable = true;
   services.tailscale.enable = true;
 
@@ -79,7 +84,6 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
-      rustdesk
     #  thunderbird
     ];
   };
@@ -93,9 +97,10 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     git
+    vscode
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -124,12 +129,8 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "25.11"; # Did you read the comment?
-
-  services.xserver.videoDrivers = [ "nvidia" ] ;
-  hardware = {
-    nvidia.open = true;
-    graphics.enable = true;
-  };
+  
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   virtualisation.docker = {
     enable = true;
@@ -140,5 +141,10 @@
     };
   };
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  services.xserver.videoDrivers = [ "nvidia" ] ;
+  hardware = {
+    nvidia.open = true;
+    graphics.enable = true;
+  };
+
 }

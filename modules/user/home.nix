@@ -11,6 +11,7 @@
     ./applications/discord.nix
     ./applications/keepassxc.nix
     ./applications/ghostty.nix
+    ./applications/vscode.nix
     ./plasma/default.nix
   ];
 
