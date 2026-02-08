@@ -13,6 +13,9 @@
             
             # merge for conflicting pulls
             pull.rebase = false;
+
+            # auto create branch on push
+            push.autoSetupRemote = true;
         };
     };
 }

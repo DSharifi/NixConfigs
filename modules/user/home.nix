@@ -5,6 +5,7 @@
     ./shell/shell.nix
     ./shell/tmux.nix
     ./shell/git.nix
+    ./shell/nixfmt.nix
     ./tailscale/tailscale.nix
     ./fonts/fonts.nix
     ./dev-tools/rust.nix
