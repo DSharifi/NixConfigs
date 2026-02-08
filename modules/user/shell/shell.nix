@@ -1,20 +1,20 @@
 { config, pkgs, ... }:
 
 {
-    programs.fish = {
-      enable = true;
-      interactiveShellInit = ''
-        set fish_greeting  # Disable greting
-      '';
-    };
+  programs.fish = {
+    enable = true;
+    interactiveShellInit = ''
+      set fish_greeting  # Disable greting
+    '';
+  };
 
-    programs.bash = {
-      enable = true;
-    };
+  programs.bash = {
+    enable = true;
+  };
 
-    programs.starship = {
-      enable = true;
-      enableFishIntegration = true;
-      enableBashIntegration = false;
-    };
+  programs.starship = {
+    enable = true;
+    enableFishIntegration = true;
+    enableBashIntegration = false;
+  };
 }

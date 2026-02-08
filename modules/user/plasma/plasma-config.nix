@@ -13,10 +13,16 @@
       kmix.increase_microphone_volume = "Microphone Volume Up";
       kmix.increase_volume = "Volume Up";
       kmix.increase_volume_small = "Shift+Volume Up";
-      kmix.mic_mute = ["Microphone Mute" "Meta+Volume Mute"];
+      kmix.mic_mute = [
+        "Microphone Mute"
+        "Meta+Volume Mute"
+      ];
       kmix.mute = "Volume Mute";
       ksmserver."Halt Without Confirmation" = [ ];
-      ksmserver."Lock Session" = ["Meta+L" "Screensaver"];
+      ksmserver."Lock Session" = [
+        "Meta+L"
+        "Screensaver"
+      ];
       ksmserver."Log Out" = "Ctrl+Alt+Del";
       ksmserver."Log Out Without Confirmation" = [ ];
       ksmserver.LogOut = [ ];
@@ -29,7 +35,10 @@
       kwin."Decrease Opacity" = [ ];
       kwin."Edit Tiles" = "Meta+T";
       kwin.Expose = "Ctrl+F9";
-      kwin.ExposeAll = ["Ctrl+F10" "Launch (C)"];
+      kwin.ExposeAll = [
+        "Ctrl+F10"
+        "Launch (C)"
+      ];
       kwin.ExposeClass = "Ctrl+F7";
       kwin.ExposeClassCurrentDesktop = [ ];
       kwin."Grid View" = "Meta+G";
@@ -91,12 +100,24 @@
       kwin."Switch to Screen to the Right" = [ ];
       kwin."Toggle Night Color" = [ ];
       kwin."Toggle Window Raise/Lower" = [ ];
-      kwin."Walk Through Windows" = ["Meta+Tab" "Alt+Tab"];
-      kwin."Walk Through Windows (Reverse)" = ["Meta+Shift+Tab" "Alt+Shift+Tab"];
+      kwin."Walk Through Windows" = [
+        "Meta+Tab"
+        "Alt+Tab"
+      ];
+      kwin."Walk Through Windows (Reverse)" = [
+        "Meta+Shift+Tab"
+        "Alt+Shift+Tab"
+      ];
       kwin."Walk Through Windows Alternative" = [ ];
       kwin."Walk Through Windows Alternative (Reverse)" = [ ];
-      kwin."Walk Through Windows of Current Application" = ["Meta+`" "Alt+`"];
-      kwin."Walk Through Windows of Current Application (Reverse)" = ["Meta+~" "Alt+~"];
+      kwin."Walk Through Windows of Current Application" = [
+        "Meta+`"
+        "Alt+`"
+      ];
+      kwin."Walk Through Windows of Current Application (Reverse)" = [
+        "Meta+~"
+        "Alt+~"
+      ];
       kwin."Walk Through Windows of Current Application Alternative" = [ ];
       kwin."Walk Through Windows of Current Application Alternative (Reverse)" = [ ];
       kwin."Window Above Other Windows" = [ ];
@@ -177,7 +198,10 @@
       kwin."Window to Screen 7" = [ ];
       kwin.disableInputCapture = "Meta+Shift+Esc";
       kwin.view_actual_size = "Meta+0";
-      kwin.view_zoom_in = ["Meta++" "Meta+="];
+      kwin.view_zoom_in = [
+        "Meta++"
+        "Meta+="
+      ];
       kwin.view_zoom_out = "Meta+-";
       mediacontrol.mediavolumedown = [ ];
       mediacontrol.mediavolumeup = [ ];
@@ -199,9 +223,15 @@
       org_kde_powerdevil.Sleep = "Sleep";
       org_kde_powerdevil."Toggle Keyboard Backlight" = "Keyboard Light On/Off";
       org_kde_powerdevil."Turn Off Screen" = [ ];
-      org_kde_powerdevil.powerProfile = ["Battery" "Meta+B"];
+      org_kde_powerdevil.powerProfile = [
+        "Battery"
+        "Meta+B"
+      ];
       plasmashell."Slideshow Wallpaper Next Image" = [ ];
-      plasmashell."activate application launcher" = ["Meta" "Alt+F1"];
+      plasmashell."activate application launcher" = [
+        "Meta"
+        "Alt+F1"
+      ];
       plasmashell."activate task manager entry 1" = "Meta+1";
       plasmashell."activate task manager entry 10" = [ ];
       plasmashell."activate task manager entry 2" = "Meta+2";
@@ -232,7 +262,8 @@
     };
     configFile = {
       baloofilerc.General.dbVersion = 2;
-      baloofilerc.General."exclude filters" = "*~,*.part,*.o,*.la,*.lo,*.loT,*.moc,moc_*.cpp,qrc_*.cpp,ui_*.h,cmake_install.cmake,CMakeCache.txt,CTestTestfile.cmake,libtool,config.status,confdefs.h,autom4te,conftest,confstat,Makefile.am,*.gcode,.ninja_deps,.ninja_log,build.ninja,*.csproj,*.m4,*.rej,*.gmo,*.pc,*.omf,*.aux,*.tmp,*.po,*.vm*,*.nvram,*.rcore,*.swp,*.swap,lzo,litmain.sh,*.orig,.histfile.*,.xsession-errors*,*.map,*.so,*.a,*.db,*.qrc,*.ini,*.init,*.img,*.vdi,*.vbox*,vbox.log,*.qcow2,*.vmdk,*.vhd,*.vhdx,*.sql,*.sql.gz,*.ytdl,*.tfstate*,*.class,*.pyc,*.pyo,*.elc,*.qmlc,*.jsc,*.fastq,*.fq,*.gb,*.fasta,*.fna,*.gbff,*.faa,po,CVS,.svn,.git,_darcs,.bzr,.hg,CMakeFiles,CMakeTmp,CMakeTmpQmake,.moc,.obj,.pch,.uic,.npm,.yarn,.yarn-cache,__pycache__,node_modules,node_packages,nbproject,.terraform,.venv,venv,core-dumps,lost+found";
+      baloofilerc.General."exclude filters" =
+        "*~,*.part,*.o,*.la,*.lo,*.loT,*.moc,moc_*.cpp,qrc_*.cpp,ui_*.h,cmake_install.cmake,CMakeCache.txt,CTestTestfile.cmake,libtool,config.status,confdefs.h,autom4te,conftest,confstat,Makefile.am,*.gcode,.ninja_deps,.ninja_log,build.ninja,*.csproj,*.m4,*.rej,*.gmo,*.pc,*.omf,*.aux,*.tmp,*.po,*.vm*,*.nvram,*.rcore,*.swp,*.swap,lzo,litmain.sh,*.orig,.histfile.*,.xsession-errors*,*.map,*.so,*.a,*.db,*.qrc,*.ini,*.init,*.img,*.vdi,*.vbox*,vbox.log,*.qcow2,*.vmdk,*.vhd,*.vhdx,*.sql,*.sql.gz,*.ytdl,*.tfstate*,*.class,*.pyc,*.pyo,*.elc,*.qmlc,*.jsc,*.fastq,*.fq,*.gb,*.fasta,*.fna,*.gbff,*.faa,po,CVS,.svn,.git,_darcs,.bzr,.hg,CMakeFiles,CMakeTmp,CMakeTmpQmake,.moc,.obj,.pch,.uic,.npm,.yarn,.yarn-cache,__pycache__,node_modules,node_packages,nbproject,.terraform,.venv,venv,core-dumps,lost+found";
       baloofilerc.General."exclude filters version" = 9;
       dolphinrc.General.ViewPropsTimestamp = "2026,1,7,21,35,38.02";
       dolphinrc."KFileDialog Settings"."Places Icons Auto-resize" = false;
@@ -306,28 +337,48 @@
       kwinrc.Desktops.Rows = 1;
       kwinrc.Plugins.slideEnabled = false;
       kwinrc.Tiling.padding = 4;
-      kwinrc."Tiling/0ae2f30c-9835-4144-91dd-112f842a38de/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/246c52d2-83df-4454-a128-26ecfc5094aa/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/397857fd-4d58-42ca-bd4b-f5bf09146acd/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/40ffb16b-a2a4-4ba1-b747-10fbd1eddf4d/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/4458bf39-7c05-478a-b081-686724187b21/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/54bbb224-0058-4fcd-83b3-67589e999e22/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/677b31e2-c290-4908-b410-c5aa7e5fc430/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/6e0e5077-5476-4af6-8b74-5d4046f67faf/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/721d7bc0-4d54-433a-94f0-6f489591b627/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/7991eaeb-4ac7-4cf5-9de6-efe1096c4978/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/7d82d823-478e-4317-bec9-4f87d50703ed/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/8f69d219-12fb-46ca-9ea9-b825f72d785e/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/91a99614-e572-4eb2-98db-feadce63cde8/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/a944c5c6-a183-49df-97b8-dd9322ea92d2/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/c7cedd39-afec-4ee9-9a02-97280c307e14/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/d5b2edf7-fb77-4320-a034-270058c3e19d/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"layoutDirection\":\"floating\",\"tiles\":[{\"height\":0.25,\"width\":0.3,\"x\":0.3,\"y\":0.05}],\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/edee1fc4-9cb5-44ee-90c6-f1e8a9cf5fef/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/f7a96f44-12a6-4bcf-8de9-8601c810f23a/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      kwinrc."Tiling/fb6ba0fc-7e27-44db-9044-317d015c239e/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/0ae2f30c-9835-4144-91dd-112f842a38de/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/246c52d2-83df-4454-a128-26ecfc5094aa/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/397857fd-4d58-42ca-bd4b-f5bf09146acd/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/40ffb16b-a2a4-4ba1-b747-10fbd1eddf4d/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/4458bf39-7c05-478a-b081-686724187b21/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/54bbb224-0058-4fcd-83b3-67589e999e22/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/677b31e2-c290-4908-b410-c5aa7e5fc430/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/6e0e5077-5476-4af6-8b74-5d4046f67faf/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/721d7bc0-4d54-433a-94f0-6f489591b627/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/7991eaeb-4ac7-4cf5-9de6-efe1096c4978/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/7d82d823-478e-4317-bec9-4f87d50703ed/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/8f69d219-12fb-46ca-9ea9-b825f72d785e/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/91a99614-e572-4eb2-98db-feadce63cde8/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/a944c5c6-a183-49df-97b8-dd9322ea92d2/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/c7cedd39-afec-4ee9-9a02-97280c307e14/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/d5b2edf7-fb77-4320-a034-270058c3e19d/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"layoutDirection\":\"floating\",\"tiles\":[{\"height\":0.25,\"width\":0.3,\"x\":0.3,\"y\":0.05}],\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/edee1fc4-9cb5-44ee-90c6-f1e8a9cf5fef/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/f7a96f44-12a6-4bcf-8de9-8601c810f23a/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      kwinrc."Tiling/fb6ba0fc-7e27-44db-9044-317d015c239e/d1c6f4d3-08e2-4a13-aeb5-ce5dc8ac6646".tiles =
+        "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       kwinrc.Xwayland.Scale = 1.45;
       kwinrulesrc."2abbafd6-ffd7-4812-bad1-3dc39de32260".Description = "Spotify";
-      kwinrulesrc."2abbafd6-ffd7-4812-bad1-3dc39de32260".desktops = "a944c5c6-a183-49df-97b8-dd9322ea92d2";
+      kwinrulesrc."2abbafd6-ffd7-4812-bad1-3dc39de32260".desktops =
+        "a944c5c6-a183-49df-97b8-dd9322ea92d2";
       kwinrulesrc."2abbafd6-ffd7-4812-bad1-3dc39de32260".desktopsrule = 2;
       kwinrulesrc."2abbafd6-ffd7-4812-bad1-3dc39de32260".fullscreen = true;
       kwinrulesrc."2abbafd6-ffd7-4812-bad1-3dc39de32260".fullscreenrule = 2;
@@ -335,18 +386,21 @@
       kwinrulesrc."2abbafd6-ffd7-4812-bad1-3dc39de32260".wmclasscomplete = true;
       kwinrulesrc."2abbafd6-ffd7-4812-bad1-3dc39de32260".wmclassmatch = 2;
       kwinrulesrc."4cf2b99c-5fe1-479a-9e71-8430d2f614f5".Description = "Terminal";
-      kwinrulesrc."4cf2b99c-5fe1-479a-9e71-8430d2f614f5".desktops = "6e0e5077-5476-4af6-8b74-5d4046f67faf";
+      kwinrulesrc."4cf2b99c-5fe1-479a-9e71-8430d2f614f5".desktops =
+        "6e0e5077-5476-4af6-8b74-5d4046f67faf";
       kwinrulesrc."4cf2b99c-5fe1-479a-9e71-8430d2f614f5".desktopsrule = 2;
       kwinrulesrc."4cf2b99c-5fe1-479a-9e71-8430d2f614f5".fullscreen = true;
       kwinrulesrc."4cf2b99c-5fe1-479a-9e71-8430d2f614f5".fullscreenrule = 2;
       kwinrulesrc."4cf2b99c-5fe1-479a-9e71-8430d2f614f5".wmclass = "ghostty com.mitchellh.ghostty";
       kwinrulesrc."4cf2b99c-5fe1-479a-9e71-8430d2f614f5".wmclasscomplete = true;
       kwinrulesrc."4cf2b99c-5fe1-479a-9e71-8430d2f614f5".wmclassmatch = 2;
-      kwinrulesrc."4fe9ea42-e770-44f4-8a71-f57fdc4d4dbd".desktops = "f7a96f44-12a6-4bcf-8de9-8601c810f23a";
+      kwinrulesrc."4fe9ea42-e770-44f4-8a71-f57fdc4d4dbd".desktops =
+        "f7a96f44-12a6-4bcf-8de9-8601c810f23a";
       kwinrulesrc."4fe9ea42-e770-44f4-8a71-f57fdc4d4dbd".desktopsrule = 3;
       kwinrulesrc."4fe9ea42-e770-44f4-8a71-f57fdc4d4dbd".wmclass = "Visual Studio Code";
       kwinrulesrc."7f16798a-6266-4a07-89c5-a19018600402".Description = "Visual Studio Code";
-      kwinrulesrc."7f16798a-6266-4a07-89c5-a19018600402".desktops = "7d82d823-478e-4317-bec9-4f87d50703ed";
+      kwinrulesrc."7f16798a-6266-4a07-89c5-a19018600402".desktops =
+        "7d82d823-478e-4317-bec9-4f87d50703ed";
       kwinrulesrc."7f16798a-6266-4a07-89c5-a19018600402".desktopsrule = 2;
       kwinrulesrc."7f16798a-6266-4a07-89c5-a19018600402".fullscreen = true;
       kwinrulesrc."7f16798a-6266-4a07-89c5-a19018600402".fullscreenrule = 2;
@@ -423,7 +477,8 @@
       "kate/anonymous.katesession"."Kate Plugins".textfilterplugin = true;
       "kate/anonymous.katesession".MainWindow0."Active ViewSpace" = 0;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-H-Splitter = "0,2603,0";
-      "kate/anonymous.katesession".MainWindow0.Kate-MDI-Sidebar-0-Bar-0-TvList = "kate_private_plugin_katefiletreeplugin,kateproject,kateprojectgit,lspclient_symbol_outline";
+      "kate/anonymous.katesession".MainWindow0.Kate-MDI-Sidebar-0-Bar-0-TvList =
+        "kate_private_plugin_katefiletreeplugin,kateproject,kateprojectgit,lspclient_symbol_outline";
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-Sidebar-0-LastSize = 200;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-Sidebar-0-SectSizes = 0;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-Sidebar-0-Splitter = 1352;
@@ -435,35 +490,48 @@
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-Sidebar-2-LastSize = 200;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-Sidebar-2-SectSizes = 0;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-Sidebar-2-Splitter = 2603;
-      "kate/anonymous.katesession".MainWindow0.Kate-MDI-Sidebar-3-Bar-0-TvList = "output,diagnostics,kate_plugin_katesearch,kateprojectinfo,kate_private_plugin_katekonsoleplugin";
+      "kate/anonymous.katesession".MainWindow0.Kate-MDI-Sidebar-3-Bar-0-TvList =
+        "output,diagnostics,kate_plugin_katesearch,kateprojectinfo,kate_private_plugin_katekonsoleplugin";
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-Sidebar-3-LastSize = 200;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-Sidebar-3-SectSizes = 0;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-Sidebar-3-Splitter = 2341;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-Sidebar-Style = 2;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-Sidebar-Visible = true;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-diagnostics-Position = 3;
-      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-diagnostics-Show-Button-In-Sidebar = true;
+      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-diagnostics-Show-Button-In-Sidebar =
+        true;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-diagnostics-Visible = false;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kate_plugin_katesearch-Position = 3;
-      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kate_plugin_katesearch-Show-Button-In-Sidebar = true;
+      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kate_plugin_katesearch-Show-Button-In-Sidebar =
+        true;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kate_plugin_katesearch-Visible = false;
-      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kate_private_plugin_katefiletreeplugin-Position = 0;
-      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kate_private_plugin_katefiletreeplugin-Show-Button-In-Sidebar = true;
-      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kate_private_plugin_katefiletreeplugin-Visible = false;
-      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kate_private_plugin_katekonsoleplugin-Position = 3;
-      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kate_private_plugin_katekonsoleplugin-Show-Button-In-Sidebar = true;
-      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kate_private_plugin_katekonsoleplugin-Visible = false;
+      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kate_private_plugin_katefiletreeplugin-Position =
+        0;
+      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kate_private_plugin_katefiletreeplugin-Show-Button-In-Sidebar =
+        true;
+      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kate_private_plugin_katefiletreeplugin-Visible =
+        false;
+      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kate_private_plugin_katekonsoleplugin-Position =
+        3;
+      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kate_private_plugin_katekonsoleplugin-Show-Button-In-Sidebar =
+        true;
+      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kate_private_plugin_katekonsoleplugin-Visible =
+        false;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kateproject-Position = 0;
-      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kateproject-Show-Button-In-Sidebar = true;
+      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kateproject-Show-Button-In-Sidebar =
+        true;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kateproject-Visible = false;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kateprojectgit-Position = 0;
-      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kateprojectgit-Show-Button-In-Sidebar = true;
+      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kateprojectgit-Show-Button-In-Sidebar =
+        true;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kateprojectgit-Visible = false;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kateprojectinfo-Position = 3;
-      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kateprojectinfo-Show-Button-In-Sidebar = true;
+      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kateprojectinfo-Show-Button-In-Sidebar =
+        true;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-kateprojectinfo-Visible = false;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-lspclient_symbol_outline-Position = 0;
-      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-lspclient_symbol_outline-Show-Button-In-Sidebar = true;
+      "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-lspclient_symbol_outline-Show-Button-In-Sidebar =
+        true;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-lspclient_symbol_outline-Visible = false;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-output-Position = 3;
       "kate/anonymous.katesession".MainWindow0.Kate-MDI-ToolView-output-Show-Button-In-Sidebar = true;
@@ -495,8 +563,10 @@
       "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0".Recursive = true;
       "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0".Replaces = "";
       "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0".Search = "";
-      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0".SearchAsYouTypeAllProjects = true;
-      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0".SearchAsYouTypeCurrentFile = true;
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0".SearchAsYouTypeAllProjects =
+        true;
+      "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0".SearchAsYouTypeCurrentFile =
+        true;
       "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0".SearchAsYouTypeFolder = true;
       "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0".SearchAsYouTypeOpenFiles = true;
       "kate/anonymous.katesession"."Plugin:katesearchplugin:MainWindow:0".SearchAsYouTypeProject = true;

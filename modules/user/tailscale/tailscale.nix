@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
 
 {
-    services.tailscale-systray.enable = true;
+  services.tailscale-systray.enable = true;
 }

@@ -18,7 +18,15 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, rust-overlay, plasma-manager, ... }:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      rust-overlay,
+      plasma-manager,
+      ...
+    }:
     let
       system = "x86_64-linux";
 
@@ -30,15 +38,19 @@
       };
 
       lib = nixpkgs.lib;
-    in {
+    in
+    {
       nixosConfigurations = {
         nixos = lib.nixosSystem {
           inherit system;
           modules = [
             ./configuration.nix
-            ({ pkgs, ... }: {
-              nixpkgs.overlays = [ rust-overlay.overlays.default ];
-            })
+            (
+              { pkgs, ... }:
+              {
+                nixpkgs.overlays = [ rust-overlay.overlays.default ];
+              }
+            )
           ];
         };
       };
@@ -46,7 +58,7 @@
       homeConfigurations = {
         dsharifi = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          modules = [ 
+          modules = [
             ./modules/user/home.nix
             plasma-manager.homeModules.plasma-manager
           ];

@@ -5,10 +5,10 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.grub.enable = true;
@@ -16,7 +16,11 @@
   boot.loader.grub.useOSProber = true;
 
   # Default shell
-  environment.shells = with pkgs; [ bash zsh fish ];
+  environment.shells = with pkgs; [
+    bash
+    zsh
+    fish
+  ];
   users.defaultUserShell = pkgs.fish;
   programs.fish.enable = true;
 
@@ -81,10 +85,13 @@
   users.users.dsharifi = {
     isNormalUser = true;
     description = "Daniel Sharifi";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
     packages = with pkgs; [
       kdePackages.kate
-    #  thunderbird
+      #  thunderbird
     ];
   };
 
@@ -129,8 +136,11 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "25.11"; # Did you read the comment?
-  
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   virtualisation.docker = {
     enable = true;
@@ -141,7 +151,7 @@
     };
   };
 
-  services.xserver.videoDrivers = [ "nvidia" ] ;
+  services.xserver.videoDrivers = [ "nvidia" ];
   hardware = {
     nvidia.open = true;
     graphics.enable = true;

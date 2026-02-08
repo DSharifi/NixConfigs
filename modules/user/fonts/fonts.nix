@@ -1,10 +1,10 @@
 { config, pkgs, ... }:
 
 {
-    home.packages = with pkgs; [
-        nerd-fonts.jetbrains-mono
-        nerd-fonts.fira-code
-    ];
+  home.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.fira-code
+  ];
 
-    fonts.fontconfig.enable = true;
+  fonts.fontconfig.enable = true;
 }
