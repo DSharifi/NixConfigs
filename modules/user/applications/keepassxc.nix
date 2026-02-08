@@ -7,13 +7,14 @@
         # TODO: requires xdg.autostart.enable to be enabled
         # autostart = true;
 
-        settings = {
-            GUI = {
-                AdvancedSettings = true;
-                ApplicationTheme = "dark";
-                HidePasswords = true;
-            };
-            Browser.Enabled = true;
-        };
+        # enabling settings make it tricky to enable browser specific integrations
+        # settings = {
+        #     GUI = {
+        #         AdvancedSettings = true;
+        #         ApplicationTheme = "dark";
+        #         HidePasswords = true;
+        #     };
+        #     Browser.Enabled = true;
+        # };
     };
 }
