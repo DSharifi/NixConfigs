@@ -13,6 +13,7 @@
     ./applications/keepassxc.nix
     ./applications/ghostty.nix
     ./applications/vscode.nix
+    ./applications/slack.nix
     ./plasma/default.nix
     ./plasma/plasma-config.nix
   ];
